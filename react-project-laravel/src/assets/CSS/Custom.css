@@ -1,0 +1,26 @@
+/* #myInput:checked + label {
+   background-color: rgb(227, 13, 255);
+}
+
+#myInput + label {
+   background-color: rgba(35, 214, 74, 0.886);
+} */
+
+.admin-sidebar{
+    transition: .2s;
+}
+.sidebar-backdrop{
+   background: rgba(32, 229, 104, 0.5) !important;
+}
+@media screen and (max-width:991.98px) { 
+    #sidebarToggle:checked ~ .admin-sidebar{
+        transform: translateX(0%) !important;
+    }
+    #sidebarToggle:checked ~ .sidebar-backdrop{
+        display: block !important;
+    }
+}
+
+.table td, .table th{
+    background-color: transparent !important   ;
+}
